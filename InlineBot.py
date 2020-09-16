@@ -2,6 +2,7 @@ import telebot
 import random
 import re
 from telebot import types
+from time import sleep
 
 bot = telebot.TeleBot('1255962759:AAH9w0KAiju8a-7ZD9MONEDtvDDRA5Qlx6w')
 
@@ -83,4 +84,7 @@ def main():
 
 if __name__ == '__main__':
     main()
-    bot.polling(none_stop=True)
+    try:
+        bot.polling(none_stop=True, interval=3)
+    except Exception:
+        pass
