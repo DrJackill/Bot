@@ -1,1 +1,1 @@
-web: python InlineBot.py $PORT
+bot: python InlineBot.py $PORT

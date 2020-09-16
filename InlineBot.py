@@ -3,6 +3,12 @@ import random
 import re
 from telebot import types
 from time import sleep
+import os
+from intro_to_flask import app
+
+port = int(os.environ.get("PORT", 5000))
+app.run(debug=True, host='0.0.0.0', port=port)
+
 
 bot = telebot.TeleBot('1255962759:AAH9w0KAiju8a-7ZD9MONEDtvDDRA5Qlx6w')
 
