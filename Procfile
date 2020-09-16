@@ -1,1 +1,1 @@
-web: python InlineBot.py
+web: python InlineBot.py runserver 0.0.0.0:5000
